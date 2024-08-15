@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Pacientes</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="manifest.json">
 </head>
 
 <body>
-        <h1>Faça seu Login</h1>
+    <main class="form_container">
+        <h1>Cadastre-se</h1>
+
         <form id="cad-form">
-            <fieldset>
+            <fieldset class="field">
                 <label for="username">Nome:</label>
                 <input type="text" id="nome" name="nome" required placeholder="Digite seu Nome">
+                <br>
 
                 <label for="data-nasc">Data de nascimento</label>
                 <input type="date" id="idade" name="idade" required>
-
+                <br>
                 <fieldset>
                     <legend id="sexo">Selecione seu sexo</legend>
                     <select>
@@ -26,28 +28,36 @@
                         <option>Homem</option>
                     </select>
                 </fieldset>
-
+                <br>
                 <label for="end">Endereço:</label>
                 <input type="text" id="endereco" name="Endereço" required>
-
-                <label for="tel">Telefone:</label>
+                <br>
+                <label class="tel" for="tel">Telefone:</label>
                 <input type="number" id="telefone" name="telefone" required>
-
+                <br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
+                <br>
                 <label for="cpf">CPF:</label>
                 <input type="number" id="cpf" name="cpf" required>
-
+                <br>
                 <label for="histmed">Histórico médico:</label>
                 <input type="text" id="histmed" name="histmed" required>
+                <br>
+                <label for="histmed">Senha:</label>
+                <input type="password" id="password" name="Senha" required>
+                <br>
+                <label for="histmed">Confirmar senha:</label>
+                <input type="password" id="password" name="confirmarsenha" required>
+                <br>
 
                 <button type="submit">Cadastrar</button>
             </fieldset>
 
         </form>
-        <script src="cad.js"></script>
-        <script> if ('serviceWorker' in navigator) {
+    </main>
+    <script src="cad.js"></script>
+    <script> if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/service-worker.js').
                 then(registration => { console.log('Serviço Iniciado', registration.scope); }).catch(error => { console.log('Falha na Inicialização do Serviço-Service Fail'), error });
         } 
@@ -55,4 +65,3 @@
 </body>
 
 </html>
-
