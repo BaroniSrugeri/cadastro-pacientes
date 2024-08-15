@@ -1,0 +1,44 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1{
+    color: black;
+}
+form{
+    margin-bottom: 20px;
+}
+input, button{
+    padding: 10px;
+    font-size: 16px;
+}
+#cad-form{
+    list-style: none;
+    padding: 5px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+#cad-form li{
+    background: rgb(169, 228, 255);
+    margin-bottom: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+input{
+    margin: 10px;
+}
+
+button:hover{
+    background-color: rgb(0, 132, 255);
+    transition: 0.4s;
+}
